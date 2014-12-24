@@ -1,0 +1,34 @@
+# Ignoring for tool specific files
+
+# Ant
+ant/
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IDEA
+*.iws
+*.ipr
+*.iml
+out/
+.idea/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
