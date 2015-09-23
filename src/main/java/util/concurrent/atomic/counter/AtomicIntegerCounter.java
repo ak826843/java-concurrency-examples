@@ -2,7 +2,7 @@ package util.concurrent.atomic.counter;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class AtomicCounter {
+public class AtomicIntegerCounter {
 
 	private AtomicInteger	atomicInt	= new AtomicInteger(0);
 

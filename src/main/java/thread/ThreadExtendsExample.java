@@ -1,9 +1,9 @@
 package thread;
 
-public class ThreadExtendsDemo extends Thread {
+public class ThreadExtendsExample extends Thread {
 
 	public static void main(String[] args) {
-		new ThreadExtendsDemo().start();
+		new ThreadExtendsExample().start();
 	}
 
 	@Override

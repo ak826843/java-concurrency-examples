@@ -1,8 +1,9 @@
 package util.concurrent.lock;
 
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class LockDemo {
+public class LockSimpleExample {
 
 	public static void main(String[] args) {
 
@@ -24,4 +25,24 @@ public class LockDemo {
 		t3.start();
 	}
 
+	public static class Counter {
+
+        private int count;
+        private Lock lock;
+
+        public Counter(Lock lock) {
+            this.lock = lock;
+        }
+
+        public final int getCount() {
+            lock.lock();
+            try {
+                count++;
+            } finally {
+                lock.unlock();
+            }
+            return count;
+        }
+
+    }
 }

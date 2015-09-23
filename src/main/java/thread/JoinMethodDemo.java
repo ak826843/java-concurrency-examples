@@ -17,7 +17,7 @@ public class JoinMethodDemo extends Thread {
 
 	public static void main(String[] args) throws InterruptedException {
 		Thread countdown = new JoinMethodDemo();
-		System.out.println("Startint 10 second countdown... ");
+		System.out.println("Starting 10 second countdown... ");
 		countdown.start();
 		System.out.println("Waits until countdown die");
 		countdown.join(); // Waits until countdown die
@@ -35,8 +35,10 @@ public class JoinMethodDemo extends Thread {
 			}
 		});
 		thread1.start();
-		System.out.println("Waits until thread1 (reverse coutdown) die");
+
+		System.out.println("Waits until thread1 (reverse countdown) die");
 		thread1.join(); // Waits until thread1 die
+
 		System.out.println("Bakh Babakh!!!, end of all threads");
 	}
 }
